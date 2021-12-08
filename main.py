@@ -17,8 +17,8 @@ regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 sc = StandardScaler()  
 
 
-database = pd.read_excel("../dataset/Song_dataset.xls")
-user_info = pd.read_csv("../dataset/user_info.csv")
+database = pd.read_excel("D:/Capstone/Flask_test/dataset/Song_dataset.xls")
+user_info = pd.read_csv("D:/Capstone/Flask_test/dataset/user_info.csv")
 
 app = Flask(__name__)
 app.secret_key ="Shrijit"
@@ -45,6 +45,13 @@ songGenre = set(database["Song_Genre"])
 
 @app.route('/')
 def home():
+    print("Episode: 1", ", Rewards")
+    print("Episode: 2", ", Rewards")
+    print("Episode: 3", ", Rewards")
+    print("Episode: 4", ", Rewards")
+    print("Episode: 5", ", Rewards")
+    print("Episode: 6", ", Rewards")
+
     #if 'email' in session:
         #return f'Logged in as {session["Email"]}'
     return render_template("index.html")
