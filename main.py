@@ -17,8 +17,8 @@ regex = '^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
 sc = StandardScaler()  
 
 
-database = pd.read_excel("D:/Capstone/Flask_test/dataset/Song_dataset.xls")
-user_info = pd.read_csv("D:/Capstone/Flask_test/dataset/user_info.csv")
+database = pd.read_excel("../dataset/Song_dataset.xls")
+user_info = pd.read_csv("../dataset/user_info.csv")
 
 app = Flask(__name__)
 app.secret_key ="Shrijit"
